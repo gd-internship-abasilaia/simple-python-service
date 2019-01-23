@@ -1,11 +1,10 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 setup(
-    name="clc",
-    version="0.1",
-    description='A useful module',
-    packages=find_packages(),
+    name="Python-Calculator",
+    version="0.2",
+    packages=['calc'],
     test_suite="tests",
     scripts=[
         'calculator_app.py',
-        'README.md',]
+        'README.md', ]
 )
