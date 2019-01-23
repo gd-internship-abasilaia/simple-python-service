@@ -5,3 +5,7 @@ A simple Python service that shows system info and performs arithmetic operation
 ```
 python -m unittest discover
 ```
+# How to package and run tests
+```
+python setup.py sdist test 
+```
