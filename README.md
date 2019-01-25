@@ -3,9 +3,21 @@ A simple Python service that shows system info and performs arithmetic operation
 
 # How to run tests
 ```
-python -m unittest discover
+python setup.py
 ```
-# How to package and run tests
+
+# How to package
 ```
-python setup.py sdist test 
+python setup.py sdist
 ```
+
+# How to install dependencies
+```
+python setup.py install
+```
+
+# How to run the service
+```
+FLASK_APP=service.py flask run
+```
+Then go to [http://localhost:5000](http://localhost:5000)
