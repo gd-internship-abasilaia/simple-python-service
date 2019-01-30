@@ -1,0 +1,13 @@
+language: python
+before_script:
+ - echo "Starting build"
+script:
+ - python setup.py test
+ - pip install pycodestyle
+ - pycodestyle --first calculator_app.py calc/calculator.py tests/test_calculator.py setup.py
+after_script:
+ - echo "Script finished"
+after_success:
+ - echo "Build was successful. $TRAVIS_TEST_RESULT"
+after_failure:
+ - echo "Build was failed"
