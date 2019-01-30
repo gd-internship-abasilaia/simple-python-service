@@ -15,10 +15,10 @@ python setup.py sdist
 ```
 python setup.py install
 ```
-# Howo to run pep8
+# How to run pycodestyle
 ```
-pip install pep8
-pep8 --first tests/test_calculator.py
+pip install pycodestyle
+pycodestyle --first calculator_app.py calc/calculator.py tests/test_calculator.py setup.py
 ```
 # How to run the service
 ```
