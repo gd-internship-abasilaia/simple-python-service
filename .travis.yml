@@ -4,7 +4,7 @@ before_script:
 script:
  - python setup.py test
  - pip install pycodestyle
- - pycodestyle --first --ignore=E501,E722,E704
+ - pycodestyle --first 
 after_script:
  - echo "Script finished"
 after_success:
