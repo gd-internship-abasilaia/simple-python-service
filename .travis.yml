@@ -7,7 +7,7 @@ after_script:
  - echo "Script finished"
  - echo pycodestyle 
  - bash pycodestyle.sh
- - pycodestyle --first --ignore=E501,E722,E704
+ - pycodestyle --first 
 after_success:
  - echo "Build was successful. $TRAVIS_TEST_RESULT"
 after_failure:
