@@ -5,9 +5,8 @@ script:
  - python setup.py test
 after_script:
  - echo "Script finished"
- - echo pycodestyle 
+ - echo pycodestyle running 
  - bash pycodestyle.sh
- - pycodestyle --first tests/test_calculator.py
 after_success:
  - echo "Build was successful. $TRAVIS_TEST_RESULT"
 after_failure:
