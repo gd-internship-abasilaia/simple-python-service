@@ -4,6 +4,7 @@ from setuptools.command.install import install as InstallCommand
 
 class Install(InstallCommand):
     """ Customized setuptools install command which uses pip. """
+
     def run(self, *args, **kwargs):
         import pip
         pip.main(['install', '.'])
@@ -18,6 +19,7 @@ setup(
     scripts=[
         'calculator_app.py',
         'service.py',
-        'README.md', ],
+        'README.md',
+        'pycodestyle.sh'],
     install_requires=['Flask']
 )
