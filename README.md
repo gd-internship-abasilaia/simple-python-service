@@ -3,7 +3,7 @@ A simple Python service that shows system info and performs arithmetic operation
 
 # How to run tests
 ```
-python setup.py
+python setup.py test
 ```
 
 # How to package
@@ -15,7 +15,10 @@ python setup.py sdist
 ```
 python setup.py install
 ```
-
+# How to run pycodestyle
+```
+bash pycodestyle.sh
+```
 # How to run the service
 ```
 FLASK_APP=service.py flask run
