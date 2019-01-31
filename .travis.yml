@@ -3,12 +3,10 @@ before_script:
  - echo "Starting build"
 script:
  - python setup.py test
- - pip install pycodestyle
- - pip install --upgrade pycodestyle
-
 after_script:
  - echo "Script finished"
- - pycodestyle --first calculator_app.py calc/calculator.py tests/test_calculator.py setup.py
+ - echo pycodestyle 
+ - bash pycodestyle.sh
 after_success:
  - echo "Build was successful. $TRAVIS_TEST_RESULT"
 after_failure:
