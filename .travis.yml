@@ -4,7 +4,7 @@ before_script:
 script:
  - python setup.py test
  - pip install pycodestyle
- - pycodestyle --first 
+ - pycodestyle --first calculator_app.py calc/calculator.py tests/test_calculator.py setup.py
 after_script:
  - echo "Script finished"
 after_success:
