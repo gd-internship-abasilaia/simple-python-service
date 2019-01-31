@@ -3,9 +3,10 @@ before_script:
  - echo "Starting build"
 script:
  - python setup.py test
- - bash pycodestyle.sh
 after_script:
  - echo "Script finished"
+ - echo pycodestyle running 
+ - bash pycodestyle.sh
 after_success:
  - echo "Build was successful. $TRAVIS_TEST_RESULT"
 after_failure:
