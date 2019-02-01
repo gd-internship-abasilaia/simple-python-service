@@ -13,7 +13,7 @@ class Install(InstallCommand):
 
 setup(
     name="Python-Calculator",
-    version="version",
+    version="$Rev:$",
     packages=['calc'],
     test_suite="tests",
     scripts=[
