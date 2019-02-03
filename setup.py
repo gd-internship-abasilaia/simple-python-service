@@ -1,5 +1,5 @@
 from setuptools import setup 
-from random import randint 
+from datetime import datetime
 from setuptools.command.install import install as InstallCommand
 
 
@@ -14,7 +14,7 @@ class Install(InstallCommand):
 
 setup(
     name="Python-Calculator",
-    version=(randint(0,40)),
+    version=datetime.utcnow().isoformat(),
     packages=['calc'],
     test_suite="tests",
     scripts=[
