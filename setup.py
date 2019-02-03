@@ -1,4 +1,5 @@
-from setuptools import setup
+from setuptools import setup 
+from random import randint 
 from setuptools.command.install import install as InstallCommand
 
 
@@ -13,7 +14,7 @@ class Install(InstallCommand):
 
 setup(
     name="Python-Calculator",
-    version="$Rev:$",
+    version=(randint(0,4)),
     packages=['calc'],
     test_suite="tests",
     scripts=[
