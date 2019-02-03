@@ -14,7 +14,7 @@ class Install(InstallCommand):
 
 setup(
     name="Python-Calculator",
-    version=(randint(0,4)),
+    version=(randint(0,40)),
     packages=['calc'],
     test_suite="tests",
     scripts=[
