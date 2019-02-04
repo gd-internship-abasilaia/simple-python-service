@@ -1,5 +1,6 @@
-from setuptools import setup 
+from setuptools import setup
 from datetime import datetime
+import os
 from setuptools.command.install import install as InstallCommand
 
 
@@ -11,10 +12,11 @@ class Install(InstallCommand):
         pip.main(['install', '.'])
         InstallCommand.run(self, *args, **kwargs)
 
+exec(open(os.path.join('version.py')).read())
 
 setup(
     name="Python-Calculator",
-    version=datetime.utcnow().isoformat(),
+    version='1.0 ' + SNAPSHOT,
     packages=['calc'],
     test_suite="tests",
     scripts=[
