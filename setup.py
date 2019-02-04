@@ -18,7 +18,6 @@ setup(
     name="Python-Calculator",
     version='1.0 ' + SNAPSHOT,
     packages=['calc'],
-    test_suite="tests",
     scripts=[
         'calculator_app.py',
         'service.py',
