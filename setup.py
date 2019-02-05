@@ -12,8 +12,6 @@ class Install(InstallCommand):
         pip.main(['install', '.'])
         InstallCommand.run(self, *args, **kwargs)
 
-exec(open(os.path.join('version.py')).read())
-
 setup(
     name="Python-Calculator",
     version="0.4-SNAPSHOT",
