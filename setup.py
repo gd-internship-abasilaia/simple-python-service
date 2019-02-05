@@ -16,7 +16,7 @@ exec(open(os.path.join('version.py')).read())
 
 setup(
     name="Python-Calculator",
-    version="0.3-SNAPSHOT",
+    version="0.4-SNAPSHOT",
     packages=['calc'],
     scripts=[
         'calculator_app.py',
