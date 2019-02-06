@@ -1,6 +1,6 @@
 import datetime
 import os, sys
-os.chdir(os.path.dirname(sys.argv[0]))
+os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
 dt = str(datetime.datetime.utcnow())
 newname = 'dist/Python-Calculator-0.4-'+dt+'.tar.gz'
 os.rename('dist/Python-Calculator-0.4.SNAPSHOT.tar.gz', newname)
