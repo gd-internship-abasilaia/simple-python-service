@@ -3,7 +3,7 @@ A simple Python service that shows system info and performs arithmetic operation
 
 # How to run tests
 ```
-python setup.py
+python setup.py test
 ```
 
 # How to package
@@ -15,10 +15,9 @@ python setup.py sdist
 ```
 python setup.py install
 ```
-# Howo to run pep8
+# How to run pycodestyle
 ```
-pip install pep8
-pep8 --first tests/test_calculator.py
+bash pycodestyle.sh
 ```
 # How to run the service
 ```
