@@ -3,6 +3,7 @@ from datetime import datetime
 import os
 from setuptools.command.install import install as InstallCommand
 
+
 class Install(InstallCommand):
     """ Customized setuptools install command which uses pip. """
 
@@ -10,6 +11,7 @@ class Install(InstallCommand):
         import pip
         pip.main(['install', '.'])
         InstallCommand.run(self, *args, **kwargs)
+
 
 setup(
     name="Python-Calculator",
