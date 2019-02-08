@@ -20,6 +20,6 @@ setup(
         'calculator_app.py',
         'service.py',
         'README.md',
-        'commit.sh', 'newcommit.txt'],
+        'newcommit.txt'],
     install_requires=['Flask'],
 )
