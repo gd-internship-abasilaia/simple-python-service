@@ -7,6 +7,11 @@ python setup.py test
 ```
 
 # How to package
+At fitst install pip
+```
+pip install wheel
+```
+After this step you can create wheel
 ```
 python setup.py sdist bdist_wheel
 ```
