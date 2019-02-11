@@ -7,7 +7,7 @@ python setup.py test
 ```
 
 # How to package
-At fitst install pip
+At first install wheel
 ```
 pip install wheel
 ```
