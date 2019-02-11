@@ -12,6 +12,7 @@ class Install(InstallCommand):
         pip.main(['install', '.'])
         InstallCommand.run(self, *args, **kwargs)
 
+
 setup(
     name="Python-Calculator",
     version="0.4-SNAPSHOT",
@@ -20,6 +21,8 @@ setup(
     scripts=[
         'calculator_app.py',
         'service.py',
-        'README.md'],
-    install_requires=['Flask']
+        'README.md',
+        'newcommit.txt'],
+    install_requires=['Flask'],
 )
+

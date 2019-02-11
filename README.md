@@ -7,8 +7,13 @@ python setup.py test
 ```
 
 # How to package
+At first install wheel
 ```
-python setup.py sdist
+pip install wheel
+```
+After this step you can create wheel
+```
+python setup.py sdist bdist_wheel
 ```
 
 # How to install dependencies
@@ -24,3 +29,8 @@ bash pycodestyle.sh
 FLASK_APP=service.py flask run
 ```
 Then go to [http://localhost:5000](http://localhost:5000)
+
+# How to package with info about commit
+```
+git show --summary | awk '{print $2}' | head -1 >newcommit.txt && python setup.py sdist bdist_wheel
+```
