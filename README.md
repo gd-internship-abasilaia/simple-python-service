@@ -34,3 +34,9 @@ Then go to [http://localhost:5000](http://localhost:5000)
 ```
 git show --summary | awk '{print $2}' | head -1 >newcommit.txt && python setup.py sdist bdist_wheel
 ```
+
+# How to upgrade version
+```
+current_version=$(artifactversion.sh && extract_version_without_snapshot setup.py)
+source artifactversion.sh && generate_bumped_setup
+```

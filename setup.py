@@ -15,7 +15,7 @@ class Install(InstallCommand):
 
 setup(
     name="Python-Calculator",
-    version="0.4-SNAPSHOT",
+    version='0.4-SNAPSHOT',
     packages=['calc'],
     test_suite="tests",
     scripts=[
@@ -25,4 +25,3 @@ setup(
         'newcommit.txt'],
     install_requires=['Flask'],
 )
-
