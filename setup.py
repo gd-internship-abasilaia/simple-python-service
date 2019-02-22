@@ -22,8 +22,6 @@ setup(
         'calculator_app.py',
         'service.py',
         'README.md',
-        'newcommit.txt',
-        'curr-snapshot.txt',
-        'releaseornot.sh'],
+        'newcommit.txt'],
     install_requires=['Flask'],
 )

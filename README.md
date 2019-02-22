@@ -27,3 +27,8 @@ bash pycodestyle.sh
 FLASK_APP=service.py flask run
 ```
 Then go to [http://localhost:5000](http://localhost:5000)
+
+# How to package with info about commit
+```
+git show --summary | awk '{print $2}' | head -1 >newcommit.txt && python setup.py sdist bdist_wheel
+```
