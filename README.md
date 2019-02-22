@@ -3,25 +3,32 @@ A simple Python service that shows system info and performs arithmetic operation
 
 # How to run tests
 ```
-python setup.py
+python setup.py test
 ```
-
 # How to package
+At first install wheel
 ```
-python setup.py sdist
+pip install wheel
 ```
-
+After this step you can create wheel
+```
+python setup.py sdist bdist_wheel
+```
 # How to install dependencies
 ```
 python setup.py install
 ```
-# Howo to run pep8
+# How to run pycodestyle
 ```
-pip install pep8
-pep8 --first tests/test_calculator.py
+bash pycodestyle.sh
 ```
 # How to run the service
 ```
 FLASK_APP=service.py flask run
 ```
 Then go to [http://localhost:5000](http://localhost:5000)
+
+# How to package with info about commit
+```
+git show --summary | awk '{print $2}' | head -1 >newcommit.txt && python setup.py sdist bdist_wheel
+```

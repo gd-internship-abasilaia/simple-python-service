@@ -1,9 +1,12 @@
 from setuptools import setup
+from datetime import datetime
+import os
 from setuptools.command.install import install as InstallCommand
 
 
 class Install(InstallCommand):
     """ Customized setuptools install command which uses pip. """
+
     def run(self, *args, **kwargs):
         import pip
         pip.main(['install', '.'])
@@ -18,6 +21,7 @@ setup(
     scripts=[
         'calculator_app.py',
         'service.py',
-        'README.md', ],
-    install_requires=['Flask']
+        'README.md',
+        'newcommit.txt'],
+    install_requires=['Flask'],
 )
